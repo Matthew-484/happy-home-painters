@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+/* GENERAL */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+li,
+a,
+ul {
+  text-decoration: none;
+  color: #242424;
+  list-style-type: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+}
+
+/* NAVBAR */
+
+.logo-container {
+  width: 250px;
+  margin-left: 20px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.navbar-button-list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-buttons,
+.phone-number-item {
+  margin: 0 15px;
+}
+
+.navbar-buttons {
+  font-size: 18px;
+}
+
+.phone-number {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button {
+  position: relative;
+}
+
+.button-hover-effect:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0px;
+  background-color: #242424;
+  bottom: -3px;
+  left: 0;
+  transition: all 300ms ease;
+}
+
+.button-hover-effect:hover:after {
+  width: 100%;
+}
